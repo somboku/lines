@@ -59,13 +59,17 @@ a:hover {
     z-index:11;
     position:fixed;
     left:0;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 60px) !important;
+    max-height:calc(100vh - 60px);
     top:60px;
     height:3px;
     padding-top:20px;
     padding:5px;
-
+    overflow-y: scroll;
 }
+#linkdiv::-webkit-scrollbar { 
+  width: 0px;
+}  
 
 .link {
     z-index:12;
